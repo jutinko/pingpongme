@@ -1,0 +1,23 @@
+{
+  "name": "pingpongme",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jutinko/pingpongme.git"
+  },
+  "author": "Houssem El Fekih & Zhou Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jutinko/pingpongme/issues"
+  },
+  "homepage": "https://github.com/jutinko/pingpongme#readme"
+}
