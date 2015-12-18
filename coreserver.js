@@ -45,7 +45,6 @@ exports.requestpair = function(req, res) {
     }
 }
 
-
 interval = setInterval(cleanupLocations, 1000);
 
 cleanupLocations();
