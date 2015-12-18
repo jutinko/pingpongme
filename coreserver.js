@@ -1,19 +1,10 @@
-
-
-
-var main_view = "You got matched with";
-
 // caveat: default location of London might cause problems
 
 var locations = {}
 
 var interval
 
-
 var threshold = 30 * 1000
-
-
-
 
 function cleanupLocations(){
   for (elem in locations) {
@@ -36,10 +27,10 @@ exports.requestpair = function(req, res) {
       location_state.timestamp = Date.now();
       return
     } else {
-      var common_response = main_view + (location_state.lastRequest.query.name || "Unknown coward") + " vs. " + (req.query.name || "Unknown coward at ") + location_to_check;
+      var common_response = (location_state.lastRequest.query.name || "Unknown coward") + " vs. " + (req.query.name || "Unknown coward at ") + location_to_check;
 
-      location_state.lastResponse.send(common_response);
-      res.send(common_response);
+      location_state.lastResponse.send("You got matched with " + (req.query.name || "Unknown coward") + " in " + location_to_check + "!");
+      res.send("You got matched with " + (location_state.lastRequest.query.name || "Unknown coward") + " in " + location_to_check + "!");
 
       locations[location_to_check] = {}
 
