@@ -9,9 +9,9 @@ repo you need
  - `node`: You can do `brew install node`
  - `npm`: Package manager for `node`, it is installed with `node`
 
-To build the packages, simply do `npm install` in the repo
+To build the packages, simply do `npm install` in the repo.
 
-To start the server, you can then do `node server.js`
+To start the server, you can then do `node server.js`.
 
 ## Clients
 We wrote both a web client and a `CLI` client for the tool.
@@ -22,5 +22,5 @@ We wrote both a web client and a `CLI` client for the tool.
 The `CLI` for the tool. In case you don't like using browsers. 
 To install the tool, do `go build -o pingpongme` in `pingpongme/pingpongmecli/`. 
 To find a pair, you can run `./pingpongme --name Zhou --location London`.
-To play with yourself, you can then run `./pingpongme --name Zhou2 --location London`.
+To play ping pong with yourself, you can then run `./pingpongme --name Zhou2 --location London`.
 Enjoy!
